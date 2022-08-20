@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{ 
+            border: 1px solid black;/* añadir bodes*/
+            border-collapse: collapse;/* juntar los bordes*/
+
+        }
+        thead{
+            background-color: coral; /* darle color a el encabezado*/
+        }
+        table{
+            display: block; /* elemento de bloque*/
+            max-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption> titulo de mi tabla </caption>
+        <thead>
+        <tr> <!-- primera fila -->
+            <th>Encabezado 1</th>
+            <th>Encabezado 2</th>
+            <th>Encabezado 3</th>
+            <th>Encabezado 4</th>
+        
+        </tr>
+    </thead>
+    <tbody>
+        <tr> <!-- td{celda fila $}*4 ejemplo para no hacer una fila por una-->
+                <!-- segunda fila-->
+                <td colspan="2"> celda fila 2 de columna 1</td>
+                <td> celda fila 2 de columna 2</td>
+                <td> celda fila 2 de columna 3</td>
+                               
+            <tr>    <!-- tercera fila-->
+                <td rowspan="2"> celda fila 3 de columna 1</td>
+                <td> celda fila 3 de columna 2</td>
+                <td> celda fila 3 de columna 3</td>
+                <td> celda fila 3 de columna 4</td>
+            
+
+        </tr>
+        <tr> 
+            <td> celda fila 4 de columna 2</td>
+            <td> celda fila 4 de columna 3</td>
+            <td> celda fila 4 de columna 4</td>
+        
+            
+        </tr>
+    </tbody>
+    </table>
+    
+</body>
+</html>
